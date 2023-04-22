@@ -27,5 +27,8 @@
   "homepage": "https://github.com/itsjusttriz/logger#readme",
   "devDependencies": {
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@itsjusttriz/utils": "^1.0.9"
   }
 }
