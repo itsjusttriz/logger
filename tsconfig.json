@@ -8,9 +8,9 @@
     },
     "include": [
         "src",
-        "src/__test__.ts"
     ],
     "exclude": [
         "node_modules",
+        "src/__test__.ts"
     ]
 }

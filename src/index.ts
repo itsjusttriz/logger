@@ -50,6 +50,11 @@ export class Logger {
         console.log(ANSIColors[color], ..._init, this._separator, input.join(` ${this._separator} `));
     }
 
+    setPrefix(prefix: string) {
+        this._customPrefix = prefix;
+        return this;
+    }
+
     private basicLogArray() {
         const _input = [];
         if (this._includeTimestamp)
