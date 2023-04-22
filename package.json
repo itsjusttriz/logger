@@ -2,9 +2,15 @@
   "name": "@itsjusttriz/logger",
   "version": "1.0.0",
   "description": "General logger package for my various projects",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/**"
+  ],
   "scripts": {
-    "test": "tsc && node ."
+    "start": "tsc && node lib/__test__.js",
+    "build": "tsc",
+    "up-version": "npm version patch",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -18,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/itsjusttriz/logger/issues"
   },
-  "homepage": "https://github.com/itsjusttriz/logger#readme"
+  "homepage": "https://github.com/itsjusttriz/logger#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
