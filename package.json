@@ -1,0 +1,22 @@
+{
+  "name": "@itsjusttriz/logger",
+  "version": "1.0.0",
+  "description": "General logger package for my various projects",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsjusttriz/logger.git"
+  },
+  "keywords": [
+    "ijtdev"
+  ],
+  "author": "itsjusttriz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsjusttriz/logger/issues"
+  },
+  "homepage": "https://github.com/itsjusttriz/logger#readme"
+}
