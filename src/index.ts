@@ -47,7 +47,7 @@ export class Logger {
 
     log(color: keyof typeof ANSIColors = 'RESET', ...input: any[]) {
         const _init = this.basicLogArray();
-        console.log(ANSIColors[color], ..._init, this._separator, input.join(` ${this._separator} `));
+        console.log(ANSIColors[color], ..._init, input.join(` ${this._separator} `));
     }
 
     setPrefix(prefix: string) {
@@ -57,8 +57,9 @@ export class Logger {
 
     private basicLogArray() {
         const _input = [];
-        if (this._includeTimestamp)
-            _input.push(ITime.formatNow('short'));
+        if (this._includeTimestamp) {
+            _input.push(ITime.formatNow('short'), this._separator);
+        }
         if (this._customPrefix)
             _input.push(this._customPrefix);
         return _input;
