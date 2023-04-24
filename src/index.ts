@@ -61,7 +61,7 @@ export class Logger {
             _input.push(ITime.formatNow('short'), this._separator);
         }
         if (this._customPrefix)
-            _input.push(ANSIColors.BLUE, this._customPrefix);
+            _input.push(this._customPrefix);
         return _input;
     }
 };
