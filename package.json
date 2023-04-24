@@ -1,6 +1,6 @@
 {
   "name": "@itsjusttriz/logger",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "General logger package for my various projects",
   "main": "lib/index.js",
   "files": [
