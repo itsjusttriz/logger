@@ -10,7 +10,7 @@
     "start": "tsc && node lib/__test__.js",
     "build": "tsc",
     "up-version": "npm version patch",
-    "publish": "npm publish --access=public"
+    "upload": "npm publish --access=public"
   },
   "repository": {
     "type": "git",
